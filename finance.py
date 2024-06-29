@@ -68,7 +68,7 @@ st.write(f"**Current Price:** {current_price} USD")
 st.write(f"### {ticker} from {startDate} to {endDate}")
 
 # Determine the number of rows for subplots
-num_rows = 1  # At least one row for the candlestick chart
+num_rows = 1  
 if RSI:
     num_rows += 1
 if MACD:
@@ -134,29 +134,29 @@ if Bollinger:
         y=upper_band,
         mode='lines',
         name='Upper Band',
-        line=dict(width=1, color="blue")  # Set the line width to be skinny and color to blue
+        line=dict(width=1, color="blue")  
     ), row=1, col=1)
     fig.add_trace(go.Scatter(
         x=data.index,
         y=lower_band,
         mode='lines',
         name='Lower Band',
-        line=dict(width=1)  # Set the line width to be skinny
+        line=dict(width=1)  
     ), row=1, col=1)
     fig.add_trace(go.Scatter(
         x=data.index,
         y=sma,
         mode='lines',
         name='SMA',
-        line=dict(width=1)  # Set the line width to be skinny
+        line=dict(width=1)  
     ), row=1, col=1)
 
 # Update layout
 fig.update_layout(
     yaxis_title='Price',
     xaxis_rangeslider_visible=False,
-    width=900,  # Adjust the width of the chart
-    height=500  # Adjust the height of the chart
+    width=900,  
+    height=500  
 )
 
 # Update y-axis labels for the volume chart
