@@ -49,6 +49,8 @@ A Streamlit application for analyzing stock data with various technical indicato
 
 ![financial_app](https://github.com/chanupadeshan/financeapp/assets/90650370/37b2ec8c-f15d-4615-8565-8b28f9d24d93)
 
+![financial_app2](https://github.com/chanupadeshan/Finance_application/assets/90650370/e6293547-8df1-4a06-ab2a-933ebe79ac6c)
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
